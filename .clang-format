@@ -1,0 +1,43 @@
+---
+Language: C
+
+BasedOnStyle: LLVM
+
+UseTab: Always
+IndentWidth: 4
+TabWidth: 4
+ContinuationIndentWidth: 4
+
+BreakBeforeBraces: Allman
+
+AllowShortFunctionsOnASingleLine: None
+AllowShortBlocksOnASingleLine: Never
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+AllowShortCaseLabelsOnASingleLine: false
+
+AlwaysBreakAfterReturnType: None
+PenaltyReturnTypeOnItsOwnLine: 1000000
+
+IndentCaseLabels: true
+
+PointerAlignment: Right
+
+SortIncludes: false
+IncludeBlocks: Preserve
+
+BinPackArguments: false
+BinPackParameters: false
+
+ReflowComments: false
+
+SpaceBeforeParens: ControlStatements
+
+AlignConsecutiveAssignments: false
+AlignConsecutiveDeclarations: false
+AlignTrailingComments: false
+
+Cpp11BracedListStyle: false
+
+KeepEmptyLinesAtTheStartOfBlocks: false
+MaxEmptyLinesToKeep: 1
