@@ -295,8 +295,10 @@ void Map_RenderShadowPass(Vector3 playerPos,
 	light_cam.target = playerPos;
 
 	BeginTextureMode(shadow_map);
-	ClearBackground(WHITE);
+	rlClearScreenBuffers();
 	BeginMode3D(light_cam);
+
+	rlDisableBackfaceCulling();
 
 	Matrix matView = rlGetMatrixModelview();
 	Matrix matProj = rlGetMatrixProjection();
@@ -310,6 +312,8 @@ void Map_RenderShadowPass(Vector3 playerPos,
 	{
 		drawEntitiesCallback();
 	}
+
+	rlEnableBackfaceCulling();
 
 	EndMode3D();
 	EndTextureMode();
